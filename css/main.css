@@ -138,7 +138,7 @@ h2 {
   display: flex;
   opacity: 0.8;
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
 }
 
 .sns a {
@@ -187,8 +187,13 @@ h2 {
   margin-top: 40px;
 }
 
+.container02 .info,
+.container04 .info {
+  margin-left: 200px;
+}
+
 .info {
-  margin: 180px 100px;
+  margin: 180px 300px 0 100px;
 }
 
 .info h2 {
