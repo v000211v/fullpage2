@@ -1,5 +1,216 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 body {
-  font-family: "Black Ops One", cursive;
+  background: linear-gradient(180deg, #535353 0%, #222222 98.44%);
+  color: #fff;
+  font-size: 16px;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+h2 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 70px;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  margin: 30px 0 50px;
+}
+
+#fp-nav ul li a span {
+  background: #fff;
+}
+
+.mouse_box {
+  position: absolute;
+  right: 2%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 60px;
+}
+
+.mouse {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.mouse::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.mouse::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 11.5px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+  animation: wheel 1s infinite;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.btn01 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 80px;
+  width: 180px;
+  height: 80px;
+  border: 2px solid #fff;
+  margin-right: 50px;
+  transition: all 0.3s;
+}
+
+.btn02 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 80px;
+  width: 180px;
+  height: 80px;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+.btn01:hover,
+.btn02:hover {
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+}
+
+/* 섹션01 */
+.container01 {
+  display: flex;
+}
+
+.main_pic {
+  width: 50%;
+  background: url(../images/main01.png) no-repeat center / cover;
+  height: 100vh;
+}
+
+.main_title {
+  width: 35%;
+  margin: 180px 100px;
+  position: relative;
+}
+
+.main_title h4 {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+.main_title p {
+  width: 91%;
+  line-height: 1.8;
+  font-size: 30px;
+  opacity: 0.6;
+}
+
+.sns {
+  display: flex;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 50px;
+}
+
+.sns a {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.sns i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.sns span {
+  font-size: 20px;
+}
+
+/* 섹션02 03 04 */
+.container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container02 .photo {
+  width: 46%;
+  height: 850px;
+  background: url(../images/pic01.png) no-repeat center / cover;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.container03 .photo {
+  width: 50%;
+  height: 900px;
+  background: url(../images/pic02.png) no-repeat center / cover;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.container04 .photo {
+  width: 50%;
+  height: 900px;
+  background: url(../images/pic03.png) no-repeat center / cover;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.info {
+  margin: 180px 100px;
+}
+
+.info h2 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.info p {
+  line-height: 1.8;
+  font-size: 30px;
+  opacity: 0.6;
+}
+
+/* 마우스애니메이션 */
+@keyframes wheel {
+  0% {
+    bottom: -14px;
+    opacity: 1;
+  }
+
+  100% {
+    bottom: -30px;
+    opacity: 0;
+  }
 }
